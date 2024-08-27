@@ -1,0 +1,206 @@
+/* ===============================COMMON STYLES============================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+button {
+  cursor: pointer;
+}
+
+/* -----------TASK 1----------------- */
+#categories {
+  max-width: 440px;
+}
+.item {
+
+  background-color: #f6f6fe;
+  margin-bottom: 24px;
+  margin-right: 24px;
+  margin-left: 24px;
+  border-radius: 10px;
+  padding: 16px;
+}
+.item h2{
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+.item ul li{
+  border-radius: 10px;
+  border: 1px solid #808080;
+  margin-bottom: 8px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 24px;
+}
+/* -----------TASK 2----------------- */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+ padding-left: 40px;
+}
+
+.image {
+  max-width: 360px;
+  max-height: 300px;
+ margin-right: 20px;
+ margin-bottom: 30px;
+}
+/* -----------TASK 3----------------- */
+#name-input{
+  padding-left: 24px;
+   padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+/* -----------TASK 4----------------- */
+.login-form{
+   display: block;
+ display: flex;
+ flex-direction: column;
+ width: 408px;
+}
+.login-form label{
+  margin-bottom: 10px;
+  display: block;
+   display: flex;
+   flex-direction: column;
+
+}
+.login-form label input{
+   width: 360px;
+   height: 36px;
+}
+.login-form button{
+  background-color: #4E75FF;
+  width: 86px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid  #4e74ff00;
+  color: #fff;
+  font-size: 14px;
+}
+.login-form button:hover{
+  background-color: #6C8CFF;
+}
+/* -----------TASK 5----------------- */
+.widget{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+
+}
+.widget button{
+  width: 169px;
+  height: 80px;
+   background-color: #4E75FF;
+
+  border-radius: 4px;
+  border: 1px solid  #ffffff00;
+  color: #fff;
+  font-size: 14px;
+}
+/* -----------TASK 6----------------- */
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f6f8fc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#controls input[type="number"] {
+  width: 60px;
+  padding: 5px 10px;
+  font-size: 18px;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#controls button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+#controls button[data-create] {
+  background-color: #3b82f6;
+}
+
+#controls button[data-destroy] {
+  background-color: #ef4444;
+}
+
+#boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f6f8fc;
+  border-radius: 10px;
+}
