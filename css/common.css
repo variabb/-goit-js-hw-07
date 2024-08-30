@@ -60,7 +60,6 @@ button {
   max-width: 440px;
 }
 .item {
-
   background-color: #f6f6fe;
   margin-bottom: 24px;
   margin-right: 24px;
@@ -68,11 +67,11 @@ button {
   border-radius: 10px;
   padding: 16px;
 }
-.item h2{
+.item h2 {
   margin-bottom: 16px;
   font-size: 32px;
 }
-.item ul li{
+.item ul li {
   border-radius: 10px;
   border: 1px solid #808080;
   margin-bottom: 8px;
@@ -85,19 +84,19 @@ button {
 .gallery {
   display: flex;
   flex-wrap: wrap;
- padding-left: 40px;
+  padding-left: 40px;
 }
 
 .image {
   max-width: 360px;
   max-height: 300px;
- margin-right: 20px;
- margin-bottom: 30px;
+  margin-right: 20px;
+  margin-bottom: 30px;
 }
 /* -----------TASK 3----------------- */
-#name-input{
+#name-input {
   padding-left: 24px;
-   padding-top: 8px;
+  padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 5px;
   border: 1px solid #808080;
@@ -105,38 +104,36 @@ button {
   margin-top: 15px;
 }
 /* -----------TASK 4----------------- */
-.login-form{
-   display: block;
- display: flex;
- flex-direction: column;
- width: 408px;
+.login-form {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 408px;
 }
-.login-form label{
+.login-form label {
   margin-bottom: 10px;
   display: block;
-   display: flex;
-   flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
-.login-form label input{
-   width: 360px;
-   height: 36px;
+.login-form label input {
+  width: 360px;
+  height: 36px;
 }
-.login-form button{
-  background-color: #4E75FF;
+.login-form button {
+  background-color: #4e75ff;
   width: 86px;
   height: 40px;
   border-radius: 4px;
-  border: 1px solid  #4e74ff00;
+  border: 1px solid #4e74ff00;
   color: #fff;
   font-size: 14px;
 }
-.login-form button:hover{
-  background-color: #6C8CFF;
+.login-form button:hover {
+  background-color: #6c8cff;
 }
 /* -----------TASK 5----------------- */
-.widget{
-
+.widget {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -144,16 +141,15 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; 
-
+  gap: 20px;
 }
-.widget button{
+.widget button {
   width: 169px;
   height: 80px;
-   background-color: #4E75FF;
+  background-color: #4e75ff;
 
   border-radius: 4px;
-  border: 1px solid  #ffffff00;
+  border: 1px solid #ffffff00;
   color: #fff;
   font-size: 14px;
 }
@@ -170,7 +166,7 @@ button {
   margin-bottom: 20px;
 }
 
-#controls input[type="number"] {
+#controls input[type='number'] {
   width: 60px;
   padding: 5px 10px;
   font-size: 18px;
@@ -197,10 +193,11 @@ button {
 
 #boxes {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок */
+  gap: 10px; /* Відступ між елементами */
   padding: 20px;
   background-color: #f6f8fc;
   border-radius: 10px;
+  overflow-y: auto; /* Додає вертикальну прокрутку, якщо потрібно */
+  height: 500px; /* Висота контейнера для прокрутки */
 }
